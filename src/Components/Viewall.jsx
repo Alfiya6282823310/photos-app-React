@@ -5,7 +5,7 @@ import axios from 'axios'
 const Viewall = () => {
     const [data,changeData]=useState([])
     const fetchData=()=>{
-        axios.get("").then(
+        axios.get("http://localhost:8084/View").then(
             (response)=>{
                 changeData(response.data)
             }
